@@ -1,0 +1,19 @@
+{
+    "name": "tv2regionerne/statamic-deduplicate",
+    "autoload": {
+        "psr-4": {
+            "Tv2regionerne\\StatamicDeduplicate\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Statamic Deduplicate",
+            "description": "Statamic Deduplicate addon"
+        },
+        "laravel": {
+            "providers": [
+                "Tv2regionerne\\StatamicDeduplicate\\ServiceProvider"
+            ]
+        }
+    }
+}
