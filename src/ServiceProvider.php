@@ -8,10 +8,14 @@ use Tv2regionerne\StatamicDeduplicate\Actions\DeduplicateActions;
 
 class ServiceProvider extends AddonServiceProvider
 {
+    protected $tags = [
+        Tags\Deduplicate::class,
+    ];
+
     public function register()
     {
         $this->app->singleton('deduplicate', function () {
-            return new Deduplicate();
+            return new Deduplicate;
         });
 
         Collection::hook('init', DeduplicateActions::filter());
