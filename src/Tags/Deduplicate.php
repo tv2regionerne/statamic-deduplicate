@@ -25,6 +25,6 @@ class Deduplicate extends Tags
 
     public function fetch()
     {
-        app('deduplicate')->fetch();
+        return app('deduplicate')->fetch();
     }
 }
