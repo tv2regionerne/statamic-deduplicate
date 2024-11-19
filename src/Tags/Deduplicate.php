@@ -22,4 +22,9 @@ class Deduplicate extends Tags
 
         app('deduplicate')->merge($ids);
     }
+
+    public function fetch()
+    {
+        app('deduplicate')->fetch();
+    }
 }
